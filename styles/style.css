@@ -1,0 +1,1284 @@
+/* Основной шрифт всего макета */
+@font-face{
+    font-family: 'Gotham Medium';
+    font-weight: normal;
+    font-style: normal;
+    src: local('Gotham Medium'), local('GothamMedium'),
+    url('../fonts/Gotham Medium Regular.ttf') format('truetype');
+}
+
+/* Шрифт формы фильтров */
+@font-face{
+    font-family: 'Gotham Book';
+    font-weight: normal;
+    font-style: normal;
+    src: local('Gotham Book'), local('GothamBook'),
+    url('../fonts/Gotham Book.otf') format('otf');
+}
+
+/* Внешний общий стиль макета*/
+.wrapper{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #f3f1f2;
+}
+
+/* Общий стиль шапки*/
+header{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    outline: 0;
+}
+
+/* Выводим логтип в шапке*/
+.logo{
+    width: 154px;
+    height: 45px;
+    background: url('../pictures/logo/logo-head.png') no-repeat right;
+    flex-basis: 304px;
+}
+
+/* Общий стиль навигации в шапке*/
+.header-nav{
+    flex-basis: 590px;
+}
+
+.header-nav ul{
+    margin: 0;
+    padding: 0 18px 0 101px;
+}
+
+/* Выстраиваем элементы меню шапки в ряд */
+.header-nav li{
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.header-nav li:last-child{
+    margin: 0;
+}
+
+.header-nav a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #96a6a7;
+    outline: 0;
+}
+
+/* Стиль формы поиска и входа в шапке*/
+header form{
+    display: flex;
+    align-items: center;
+    flex-basis: 386px;
+}
+
+.header-search{
+    padding: 23px 0;
+    background-color: #e2dee0;
+    flex-grow: 1;
+}
+
+.header-search a{
+    font-size: 24px;
+    display: inline-block;
+    padding: 0 25px;
+    color: #fff;
+    outline: 0;
+}
+
+.header-login{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 23px 0;
+    color: #fff;
+    background-color: #e94e38;
+    flex-grow: 15;
+}
+
+.header-login a{
+    font-size: 24px;
+    display: inline-block;
+    padding: 0 14px 0 40px;
+    color: #fff;
+    outline: 0;
+}
+
+.header-login input{
+    display: inline-block;
+    width: 100%;
+    max-width: 120px;
+    padding: 0;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    background-color: #e94e38;
+}
+
+/* форма поиска */
+main .search{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1280px;
+    height: 375px;
+    padding: 40px 0;
+    background: url('../pictures/backgraund/search-background.png') no-repeat center;
+    align-items: center;
+}
+
+.search p{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 0 0 33px;
+    cursor: default;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, .15);
+}
+
+.pulldown-menu{
+    display: flex;
+    margin-bottom: 22px;
+    flex-basis: 50px;
+}
+
+.pulldown-menu a{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 164px;
+    margin: 0 15px;
+    padding: 14px 24px 14px 30px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    outline: 0;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.pulldown-menu span{
+    display: inline-block;
+    width: 100%;
+    max-width: 145px;
+}
+
+.search input{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 470px;
+    margin-bottom: 28px;
+    padding: 15px 32px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    outline: 0;
+    background-color: rgba(255, 255, 255, .2);
+    flex-basis: 50px;
+}
+
+.search input::placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.search input::-webkit-input-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.search input:-moz-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.search input::-moz-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.search input:-ms-input-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.search-btn{
+    padding: 20px 32px;
+    text-decoration: none;
+    border-radius: 30px;
+    outline: 0;
+    background-color: #e94e38;
+    box-shadow: 0 2px 0 #c1412e;
+}
+
+.search-btn span{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, .15);
+}
+
+/*Блок фильтров*/
+.filter{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #edebec;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 60px;
+}
+
+.filter ul{
+    margin: 0;
+    padding: 0;
+}
+
+.filter p{
+    margin: 0;
+}
+
+.filter li{
+    display: block;
+}
+
+.filter-sort{
+    flex-basis: 264px;
+}
+
+.filter-sort ul{
+    display: flex;
+}
+
+.filter-sort li{
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.filter-sort a{
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #96a6a7;
+    outline: 0;
+}
+
+.filter-sort a:hover{
+    color: #e94e38;
+}
+
+.filter-map{
+    display: flex;
+    flex-basis: 252px;
+    justify-content: space-between;
+}
+
+.filter-map a:first-child{
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 115px;
+    margin-right: 12px;
+    padding: 12px 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: .5;
+    color: #e94e38;
+    border: 1px solid #96a6a7;
+    border-radius: 17px;
+    outline: 0;
+    background-color: #fff;
+}
+
+.filter-map a:last-child{
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 125px;
+    padding: 12px 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #1baf5d;
+    border-radius: 17px;
+    outline: 0;
+    background-color: #1baf5d;
+}
+
+.filter-map span{
+    display: inline-block;
+    width: 100%;
+    max-width: 68px;
+}
+
+.filter-type{
+    display: flex;
+    flex-basis: 295px;
+}
+
+.filter-type p{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 5px;
+    padding: 15px 0;
+    cursor: default;
+    text-transform: uppercase;
+    color: #96a6a7;
+}
+
+.filter-type ul{
+    display: flex;
+}
+
+.filter-type li{
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 10px 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    fill: #fff;
+}
+
+.filter-type li:nth-child(1){
+    background-color: #1baf5d;
+}
+
+.filter-type li:nth-child(1):hover{
+    background-color: #fff;
+    fill: #1baf5d;
+}
+
+.filter-type li:nth-child(2){
+    background-color: #b6c0c1;
+}
+
+.filter-type li:nth-child(2):hover{
+    background-color: #fff;
+    fill: #b6c0c1;
+}
+
+.filter-type li:nth-child(3){
+    background-color: #b6c0c1;
+}
+
+.filter-type li:nth-child(3):hover{
+    background-color: #fff;
+    fill: #b6c0c1;
+}
+
+.filter-type li:nth-child(4){
+    background-color: #f19e1f;
+}
+
+.filter-type li:nth-child(4):hover{
+    background-color: #fff;
+    fill: #f19e1f;
+}
+
+.filter-type li:nth-child(5){
+    background-color: #88499c;
+}
+
+.filter-type li:nth-child(5):hover{
+    background-color: #fff;
+    fill: #88499c;
+}
+
+/* Блок инфо карточек*/
+.posts{
+    display: flex;
+    padding: 30px 148px;
+    flex-wrap: wrap;
+}
+
+.posts h1{
+    cursor: default;
+}
+
+.posts p{
+    cursor: default;
+}
+
+.posts .feedback span{
+    cursor: default;
+}
+
+/*карточка 1*/
+.small-card-1{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 210px;
+    margin: 16px 18px;
+    padding: 176px 15px 14px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #e2dee0;
+}
+
+.small-card-1 .img-card{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 210px;
+    height: 140px;
+    background: url('../pictures/images/layer-6.png') center no-repeat;
+}
+
+.small-card-1 .logo-card{
+    background-color: #1baf5d;
+}
+
+.small-card-1 .hover-card{
+    background-color: #1baf5d;
+}
+
+.small-card-1 > p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 19px 0;
+    text-align: center;
+    color: #566375;
+}
+
+.small-card-1 h1{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1baf5d;
+}
+
+.small-card-1 .feedback{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f19e1f;
+}
+
+.small-card-1 .feedback span{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #96a6a7;
+}
+
+/*карточка 2*/
+
+.small-card-2{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 210px;
+    margin: 16px 18px;
+    padding: 176px 15px 14px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #e2dee0;
+}
+
+.small-card-2 .img-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 140px;
+    border-bottom: 3px #1baf5d;
+    background: url('../pictures/images/layer-7.png') center no-repeat;
+}
+
+.small-card-2 .logo-card{
+    background-color: #f19e1f;
+}
+
+.small-card-2 .hover-card{
+    background-color: #f19e1f;
+}
+
+.small-card-2 > p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 35px 0;
+    text-align: center;
+    color: #566375;
+}
+
+.small-card-2 h1{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1baf5d;
+}
+
+.small-card-2 .feedback{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f19e1f;
+}
+
+.small-card-2 .feedback span{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #96a6a7;
+}
+
+/*карточка 3*/
+
+.small-card-3{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 210px;
+    margin: 16px 18px;
+    padding: 176px 15px 14px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #e2dee0;
+}
+
+.small-card-3 .img-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 140px;
+    border-bottom: 3px #1baf5d;
+    background: url('../pictures/images/layer-6.png') center no-repeat;
+}
+
+.small-card-3 .logo-card{
+    background-color: #88499c;
+}
+
+.small-card-3 .hover-card{
+    background-color: #88499c;
+}
+
+.small-card-3 > p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 19px 0;
+    text-align: center;
+    color: #566375;
+}
+
+.small-card-3 h1{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1baf5d;
+}
+
+.small-card-3 .feedback{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f19e1f;
+}
+
+.small-card-3 .feedback span{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #96a6a7;
+}
+
+/*карточка 4*/
+
+.small-card-4{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 210px;
+    margin: 16px 18px;
+    padding: 176px 15px 14px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #e2dee0;
+}
+
+.small-card-4 .img-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 140px;
+    border-bottom: 3px #1baf5d;
+    background: url('../pictures/images/layer-8.png') center no-repeat;
+}
+
+.small-card-4 .logo-card{
+    background-color: #1baf5d;
+}
+
+.small-card-4 .hover-card{
+    background-color: #1baf5d;
+}
+
+.small-card-4 > p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 19px 0;
+    text-align: center;
+    color: #566375;
+}
+
+.small-card-4 h1{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1baf5d;
+}
+
+.small-card-4 .feedback{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f19e1f;
+}
+
+.small-card-4 .feedback span{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #96a6a7;
+}
+
+/*большая карточка 1*/
+
+.big-card-1{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 455px;
+    margin: 16px 18px;
+    padding: 140px 17px 18px 97px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #e2dee0;
+}
+
+.big-card-1 .img-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 455px;
+    height: 120px;
+    padding: 95px 80px 10px 97px;
+    border-bottom: 3px #1baf5d;
+    background: url('../pictures/images/rectangle-6.png') no-repeat bottom,
+    url('../pictures/images/layer-9.png') no-repeat center;
+}
+
+.big-card-1 .feedback{
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #f19e1f;
+}
+
+.big-card-1 .feedback span{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.big-card-1 .logo-card{
+    top: 92px;
+    left: 25px;
+    background-color: #1baf5d;
+}
+
+.big-card-1 .feedback-person-photo{
+    width: 55px;
+    height: 55px;
+    background-image: url('../pictures/guest/guest1.png');
+}
+
+/*большая карточка 2*/
+
+.big-card-2{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 455px;
+    margin: 16px 18px;
+    padding: 140px 17px 18px 97px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 #e2dee0;
+}
+
+.big-card-2 .img-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 455px;
+    height: 120px;
+    padding: 95px 80px 10px 97px;
+    border-bottom: 3px #1baf5d;
+    background: url('../pictures/images/rectangle-6.png') no-repeat bottom,
+    url('../pictures/images/layer-12.png') no-repeat center;
+}
+
+.big-card-2 .feedback{
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #f19e1f;
+}
+
+.big-card-2 .feedback span{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.big-card-2 .logo-card{
+    top: 92px;
+    left: 25px;
+    background-color: #f19e1f;
+}
+
+.big-card-2 .feedback-person-photo{
+    width: 55px;
+    height: 55px;
+    background-image: url('../pictures/guest/guest2.png');
+}
+
+/* общие стили больших карточек*/
+.img-card h1{
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, .15);
+}
+
+.feedback-card-text h1{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    text-transform: uppercase;
+    color: #566375;
+}
+
+.feedback-card-text p{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    color: #566375;
+}
+
+.feedback-card-text a{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #566375;
+    outline: 0;
+}
+
+.feedback-card-rating{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    color: #f19e1f;
+}
+
+.big-card-decor{
+    position: absolute;
+    top: 148px;
+    left: 51px;
+    width: 2px;
+    height: 24px;
+    background-color: #f3f1f2;
+}
+
+/* Вывод слоя hover сверху карточек*/
+
+.hover-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 210px;
+    height: 140px;
+    padding: 25px 37px 44px;
+    opacity: .7;
+}
+
+.hover-card .show-btn{
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 137px;
+    height: 31px;
+    margin-bottom: 22px;
+    padding: 8px 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.rating-feedback{
+    display: flex;
+    width: 100%;
+    max-width: 136px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-feedback a{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.img-card:hover .hover-card{
+    display: block;
+}
+
+/* Общие стили декоративных элементов малых карточек*/
+
+.logo-card{
+    position: absolute;
+    z-index: 2;
+    top: 110px;
+    left: 80px;
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    padding: 15px 12px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    fill: #fff;
+}
+
+.feedback-person-photo{
+    position: absolute;
+    z-index: 2;
+    top: 175px;
+    left: 25px;
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    padding: 15px 12px;
+    border: 3px solid #e2dee0;
+    border-radius: 50%;
+    fill: #fff;
+}
+
+.cost-card{
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 65px;
+    height: 25px;
+    margin: 0;
+    padding: 7px 11px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 12px;
+    background-color: #1baf5d;
+}
+
+.rating{
+    display: inline;
+    width: 100px;
+    text-align: center;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span{
+    line-height: 1em;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+.rating > span:hover,
+.rating > span:hover ~ span{
+    color: transparent;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before{
+    font-family: 'Font Awesome 5 Free', serif;
+    font-weight: bold;
+    line-height: 1em;
+    position: absolute;
+    left: 0;
+    content: '\f005';
+    color: #ff0;
+}
+
+/* кнопка вывода дополнительных карточек*/
+
+.posts > a{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 18px;
+    text-align: center;
+    text-decoration: underline;
+    color: #566375;
+    outline: 0;
+    flex-basis: 947px;
+}
+
+.posts > a span{
+    margin-right: 5px;
+}
+
+hr{
+    width: 100%;
+    max-width: 980px;
+    margin-bottom: 85px;
+    color: #e2dee0;
+}
+
+/*Блок описаний*/
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140px;
+    align-items: center;
+}
+
+.offer > h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 11px 0;
+    cursor: default;
+    color: #566375;
+}
+
+.offer > p{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 70px 0;
+    cursor: default;
+    color: #96a6a7;
+}
+
+.offer-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 742px;
+    margin-bottom: 38px;
+}
+
+.offer-nav .offer-icon{
+    box-sizing: border-box;
+    width: 98px;
+    height: 98px;
+    padding: 26px 22px;
+    cursor: pointer;
+    border: 2px solid #9dacad;
+    border-radius: 50%;
+    fill: #9dacad;
+}
+
+.offer-nav .offer-icon:hover{
+    border-color: #1baf5d;
+    fill: #1baf5d;
+}
+
+.offer-nav .offer-br-decor{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 53px;
+    height: 2px;
+    margin: 0 6px;
+    background-color: #e2dee0;
+}
+
+.offer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-text div{
+    display: flex;
+}
+
+.offer-text h1{
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 82px;
+    margin: 0 0 39px 0;
+    cursor: default;
+    color: #1baf5d;
+}
+
+.offer-text span{
+    font-size: 30px;
+    font-weight: 400;
+    box-sizing: border-box;
+    width: 62px;
+    height: 62px;
+    margin-right: 33px;
+    color: #fff;
+    border-radius: 31px;
+    background-color: #1db05e;
+}
+
+.offer-text div span:first-of-type{
+    padding: 19px 23px 14px;
+}
+
+.offer-text div span:last-of-type{
+    padding: 15px;
+}
+
+.offer-text p{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    max-width: 264px;
+    margin: 0;
+    cursor: default;
+    color: #566375;
+}
+
+.offer-text div p:first-of-type{
+    margin-right: 39px;
+}
+
+/* подвал*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    height: 500px;
+    background: url('../pictures/backgraund/footer-background.png') no-repeat center;
+    align-items: center;
+}
+
+.subscribe{
+    margin-bottom: 55px;
+}
+
+.subscribe p{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 47px 0;
+    padding-top: 61px;
+    cursor: default;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, .15);
+}
+
+.subscribe > div{
+    display: flex;
+    width: 492px;
+    height: 58px;
+    padding: 0 4px 0 30px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, .1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe-btn{
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+    width: 120px;
+    height: 50px;
+    padding: 18px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    outline: 0;
+    background-color: #e94e38;
+    box-shadow: 0 2px 0 #c1412e;
+    text-shadow: 0 1px 1px rgba(0, 0, 1, .15);
+}
+
+.subscribe input{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.subscribe input::placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.subscribe input::-webkit-input-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.subscribe input:-moz-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.subscribe input::-moz-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.subscribe input:-ms-input-placeholder{
+    font-family: 'Gotham Book',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.subscribe i{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+hr{
+    width: 100%;
+    max-width: 980px;
+    margin-bottom: 40px;
+    opacity: .1;
+    color: #fff;
+}
+
+.footer-end{
+    display: flex;
+    width: 100%;
+    max-width: 935px;
+    justify-content: space-between;
+}
+
+.footer-end nav{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #c0bebc;
+}
+
+.footer-end ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-end li{
+    display: block;
+}
+
+.footer-end p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 22px 0;
+    cursor: default;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-end a{
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    color: #c0bebc;
+}
+
+.footer-end div{
+    margin-right: 80px;
+}
+
+.footer-end div ul{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.footer-end div a{
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-end div p:last-of-type{
+    text-decoration: none;
+}
